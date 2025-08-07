@@ -8,8 +8,7 @@ export default function Header() {
     <>
       {/* Top promotional banner */}
       <div className="bg-[#7B189F] text-white text-center py-2 px-4 text-sm">
-        <span className="font-medium">EXTRA 10% OFF* | APP-EXCLUSIVE SALE ENDS AUGUST 9 →</span>
-        <span className="ml-8 text-xs">Rewards | Financing | Professional | Free & Easy Delivery Over $35*</span>
+        <span className="font-medium">EXTRA 10% OFF** | APP-EXCLUSIVE SALE ENDS AUGUST 8</span>
       </div>
       
       {/* Main header */}
