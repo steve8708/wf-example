@@ -112,7 +112,11 @@ export default function ProductCarousel() {
 
                   {/* Product Info */}
                   <div className="space-y-2">
-                    <h3 className="text-sm line-clamp-2 leading-tight">
+                    <h3 className="text-sm leading-tight overflow-hidden" style={{
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical'
+                    }}>
                       {product.title}
                     </h3>
                     
