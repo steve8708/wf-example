@@ -14,18 +14,16 @@ export default function RewardsBanner() {
               earn rewards and enjoy exclusive perks, every time you shop
             </h2>
             <p className="text-lg mb-6">Unlock your next home gem</p>
-            <Button 
-              className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full"
-            >
+            <Button className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full">
               Join now for $29/year
             </Button>
           </div>
-          
+
           {/* Right image area */}
           <div className="flex-1 max-w-md">
-            <img 
-              src="https://assets.wfcdn.com/im/24098124/resize-h600-w1200%5Ecompr-r85/2410/241008152/default_name.jpg" 
-              alt="Rewards member enjoying shopping" 
+            <img
+              src="https://assets.wfcdn.com/im/24098124/resize-h600-w1200%5Ecompr-r85/2410/241008152/default_name.jpg"
+              alt="Rewards member enjoying shopping"
               className="w-full h-auto rounded-lg"
             />
           </div>

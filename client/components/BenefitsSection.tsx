@@ -21,11 +21,13 @@ export default function BenefitsSection() {
             </Button>
           </div>
         </div>
-        
+
         {/* Benefits grid */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold mb-12">join for these benefits & more</h2>
-          
+          <h2 className="text-2xl font-bold mb-12">
+            join for these benefits & more
+          </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* 5% back in rewards */}
             <div className="bg-white rounded-lg p-8 shadow-sm">
@@ -38,7 +40,7 @@ export default function BenefitsSection() {
                 on every item every day. (bonus: they never expire)
               </p>
             </div>
-            
+
             {/* Free shipping */}
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -46,11 +48,9 @@ export default function BenefitsSection() {
               </div>
               <h3 className="text-xl font-bold mb-4">free shipping</h3>
               <h4 className="text-xl font-bold mb-4">on every order*</h4>
-              <p className="text-gray-600">
-                From plates to sofas, it's on us
-              </p>
+              <p className="text-gray-600">From plates to sofas, it's on us</p>
             </div>
-            
+
             {/* Members-only sales */}
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -63,7 +63,7 @@ export default function BenefitsSection() {
               </p>
             </div>
           </div>
-          
+
           {/* Additional benefits */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Special offers & perks */}
@@ -73,7 +73,7 @@ export default function BenefitsSection() {
               </div>
               <h4 className="text-lg font-bold">special offers & perks</h4>
             </div>
-            
+
             {/* Member support line */}
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -81,13 +81,15 @@ export default function BenefitsSection() {
               </div>
               <h4 className="text-lg font-bold">member support line</h4>
             </div>
-            
+
             {/* Save across family of brands */}
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-purple-600" />
               </div>
-              <h4 className="text-lg font-bold">save across our family of brands</h4>
+              <h4 className="text-lg font-bold">
+                save across our family of brands
+              </h4>
             </div>
           </div>
         </div>
