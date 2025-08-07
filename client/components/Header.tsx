@@ -28,7 +28,7 @@ export default function Header() {
             </div>
 
             {/* Search bar - centered */}
-            <div className="w-full max-w-lg relative">
+            <div className="w-full max-w-[800px] relative">
               <Input
                 type="text"
                 placeholder="Find anything home..."
