@@ -20,7 +20,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         wayfair: {
-          purple: "#7b189f",
+          purple: "#7B189F",
           "purple-dark": "#5c1277",
           "purple-light": "#f8f3fa",
         },
