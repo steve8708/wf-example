@@ -15,7 +15,7 @@ export default function Header() {
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           {/* Desktop header */}
-          <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center py-4 gap-6">
+          <div className="hidden md:flex items-center py-4 gap-6">
             {/* Logo */}
             <div className="flex justify-start">
               <Link to="/" className="flex-shrink-0">
