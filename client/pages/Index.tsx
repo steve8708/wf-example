@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import ProductCarousel from "@/components/ProductCarousel";
 
 export default function Index() {
   return (
@@ -7,6 +8,7 @@ export default function Index() {
       <Header />
       <main>
         <HeroSection />
+        <ProductCarousel />
       </main>
     </div>
   );
