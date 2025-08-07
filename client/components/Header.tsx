@@ -15,8 +15,8 @@ export default function Header() {
       {/* Main header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
-          {/* Logo and search section */}
-          <div className="flex items-center py-4 gap-6">
+          {/* Desktop header */}
+          <div className="hidden md:flex items-center py-4 gap-6">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
               <img 
@@ -28,13 +28,13 @@ export default function Header() {
             
             {/* Search bar */}
             <div className="flex-1 max-w-2xl relative">
-              <Input
-                type="text"
-                placeholder="Find anything home..."
+              <Input 
+                type="text" 
+                placeholder="Find anything home..." 
                 className="w-full pl-4 pr-12 py-3 border-2 border-gray-300 rounded-lg focus:border-[#7B189F] focus:ring-0"
               />
-              <Button
-                size="sm"
+              <Button 
+                size="sm" 
                 className="absolute right-1 top-1 bottom-1 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-md"
               >
                 <Search className="h-4 w-4" />
@@ -43,27 +43,59 @@ export default function Header() {
             
             {/* User actions */}
             <div className="flex items-center gap-4 ml-auto">
-              <Button variant="ghost" size="sm" className="hidden md:flex items-center gap-2">
+              <Button variant="ghost" size="sm" className="flex items-center gap-2">
                 <User className="h-4 w-4" />
                 Sign In
               </Button>
-              <Button variant="ghost" size="sm" className="hidden md:flex items-center gap-2">
+              <Button variant="ghost" size="sm" className="flex items-center gap-2">
                 <ShoppingCart className="h-4 w-4" />
                 Cart
               </Button>
-              {/* Mobile menu */}
-              <div className="md:hidden flex items-center gap-4">
-                <Button variant="ghost" size="sm" className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  Sign In
-                </Button>
-                <Button variant="ghost" size="sm" className="flex items-center gap-2">
-                  <ShoppingCart className="h-4 w-4" />
-                </Button>
-                <Button variant="ghost" size="sm">
-                  <Menu className="h-4 w-4" />
-                </Button>
-              </div>
+            </div>
+          </div>
+
+          {/* Mobile header */}
+          <div className="md:hidden flex items-center justify-between py-4">
+            {/* Hamburger menu */}
+            <Button variant="ghost" size="sm">
+              <Menu className="h-4 w-4" />
+            </Button>
+            
+            {/* Logo */}
+            <Link to="/" className="flex-shrink-0">
+              <img 
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff11e2abd32874d5a81c338dbec16dcea%2F242cb59819ef4bfabd39e6b437d85dcc" 
+                alt="Wayfair" 
+                className="h-8"
+              />
+            </Link>
+            
+            {/* User actions */}
+            <div className="flex items-center gap-2">
+              <Button variant="ghost" size="sm" className="flex items-center gap-1">
+                <User className="h-4 w-4" />
+                <span className="text-sm">Sign In</span>
+              </Button>
+              <Button variant="ghost" size="sm">
+                <ShoppingCart className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+          
+          {/* Mobile search bar */}
+          <div className="md:hidden pb-4">
+            <div className="relative">
+              <Input 
+                type="text" 
+                placeholder="Find anything home..." 
+                className="w-full pl-4 pr-12 py-3 border-2 border-gray-300 rounded-lg focus:border-[#7B189F] focus:ring-0"
+              />
+              <Button 
+                size="sm" 
+                className="absolute right-1 top-1 bottom-1 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-md"
+              >
+                <Search className="h-4 w-4" />
+              </Button>
             </div>
           </div>
           
