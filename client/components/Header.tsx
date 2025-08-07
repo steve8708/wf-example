@@ -36,7 +36,7 @@ export default function Header() {
               />
               <Button
                 size="sm"
-                className="absolute right-0.5 top-0.5 bottom-0.5 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-lg"
+                className="absolute right-0.5 top-0.5 bottom-0.5 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-r-lg rounded-l-none"
               >
                 <Search className="h-4 w-4" />
               </Button>
@@ -93,7 +93,7 @@ export default function Header() {
               />
               <Button 
                 size="sm" 
-                className="absolute right-1 top-1 bottom-1 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-md"
+                className="absolute right-0.5 top-0.5 bottom-0.5 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-r-lg rounded-l-none"
               >
                 <Search className="h-4 w-4" />
               </Button>
