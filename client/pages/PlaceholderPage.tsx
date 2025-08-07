@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 interface PlaceholderPageProps {
@@ -29,6 +30,7 @@ export default function PlaceholderPage({ title, description }: PlaceholderPageP
           </p>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
