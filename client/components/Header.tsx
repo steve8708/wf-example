@@ -17,7 +17,7 @@ export default function Header() {
           {/* Desktop header */}
           <div className="hidden md:flex items-center py-4 gap-6">
             {/* Logo */}
-            <div className="flex justify-start">
+            <div className="flex-shrink-0">
               <Link to="/" className="flex-shrink-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff11e2abd32874d5a81c338dbec16dcea%2F242cb59819ef4bfabd39e6b437d85dcc"
@@ -28,22 +28,24 @@ export default function Header() {
             </div>
 
             {/* Search bar - centered */}
-            <div className="w-full max-w-[800px] relative">
-              <Input
-                type="text"
-                placeholder="Find anything home..."
-                className="w-full pl-4 pr-12 py-3 border-2 border-gray-300 rounded-lg focus:border-[#7B189F] focus:ring-0"
-              />
-              <Button
-                size="sm"
-                className="absolute right-0.5 top-0.5 bottom-0.5 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-r-lg rounded-l-none"
-              >
-                <Search className="h-4 w-4" />
-              </Button>
+            <div className="flex-1 flex justify-center px-6">
+              <div className="w-full max-w-[800px] relative">
+                <Input
+                  type="text"
+                  placeholder="Find anything home..."
+                  className="w-full pl-4 pr-12 py-3 border-2 border-gray-300 rounded-lg focus:border-[#7B189F] focus:ring-0"
+                />
+                <Button
+                  size="sm"
+                  className="absolute right-0.5 top-0.5 bottom-0.5 bg-[#7B189F] hover:bg-[#6b157f] text-white px-4 rounded-r-lg rounded-l-none"
+                >
+                  <Search className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
 
             {/* User actions */}
-            <div className="flex items-center gap-4 justify-end">
+            <div className="flex items-center gap-4 flex-shrink-0">
               <Button variant="ghost" size="sm" className="flex items-center gap-2">
                 <User className="h-4 w-4" />
                 Sign In
