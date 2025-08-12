@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import HeaderExperience from "@/components/HeaderExperience";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
@@ -13,7 +13,7 @@ export default function PlaceholderPage({
 }: PlaceholderPageProps) {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <HeaderExperience />
       <main className="container mx-auto px-4 py-16">
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{title}</h1>

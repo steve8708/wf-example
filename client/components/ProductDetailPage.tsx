@@ -1,5 +1,7 @@
 import { Heart, ChevronRight, ChevronDown, Minus, Plus, Info } from "lucide-react";
 import { useState } from "react";
+import HeaderExperience from "./HeaderExperience";
+import Footer from "./Footer";
 
 export default function ProductDetailPage() {
   const [quantity, setQuantity] = useState(1);
@@ -9,7 +11,9 @@ export default function ProductDetailPage() {
   const mainImage = "https://api.builder.io/api/v1/image/assets/TEMP/ef82f4555179c9a7d6efb0956f19d021eff1d5cc?width=1136";
 
   return (
-    <div className="flex max-w-[1600px] lg:max-w-[959px] xl:max-w-[1600px] flex-col items-start pt-3 bg-white">
+    <div className="min-h-screen bg-white">
+      <HeaderExperience />
+      <div className="flex max-w-[1600px] lg:max-w-[959px] xl:max-w-[1600px] flex-col items-start pt-3 bg-white mx-auto">
       {/* Breadcrumbs */}
       <div className="flex items-baseline gap-4 w-full px-4 lg:px-10">
         <div className="flex items-center gap-1">
@@ -298,6 +302,8 @@ export default function ProductDetailPage() {
           </div>
         </div>
       </div>
+      </div>
+      <Footer />
     </div>
   );
 }
