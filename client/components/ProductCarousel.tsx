@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Product {
   id: string;
@@ -92,7 +93,7 @@ export default function ProductCarousel() {
         <div className="relative">
           <div className="flex gap-4 overflow-x-auto scrollbar-hide pb-4 scroll-smooth snap-x snap-mandatory">
             {products.map((product) => (
-              <div key={product.id} className="flex-none w-64 snap-start">
+              <Link key={product.id} to={`/product/${product.id}`} className="flex-none w-64 snap-start hover:scale-105 transition-transform duration-200">
                 <div className="bg-white rounded-lg p-2 relative">
                   {/* Product Image */}
                   <div className="relative aspect-square mb-3 rounded-lg overflow-hidden">
@@ -154,7 +155,7 @@ export default function ProductCarousel() {
                     )}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
